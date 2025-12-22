@@ -1,0 +1,10 @@
+/* Minimal polish; lean on Bootstrap for the theme. */
+
+.dash-table-container .dash-spreadsheet-container {
+  font-size: 0.95rem;
+}
+
+/* Make Plotly graphs feel less cramped inside cards. */
+.js-plotly-plot .plotly .main-svg {
+  border-radius: 0.25rem;
+}
