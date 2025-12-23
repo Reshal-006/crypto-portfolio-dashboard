@@ -23,16 +23,6 @@ Use it to track your holdings (quantity, purchase price, current price), view po
 
 ---
 
-## Screenshots
-
-Add screenshots to a folder like `docs/screenshots/` and link them here.
-
-Example:
-- `docs/screenshots/dashboard.png`
-- `docs/screenshots/manage-holdings.png`
-
----
-
 ## Tech stack
 
 **Backend**
@@ -137,24 +127,6 @@ py .\frontend\app.py
 
 ---
 
-## Seed sample data (50+ records)
-
-The seed script generates **50+ unique portfolio holdings** and sentiment data.
-
-1) Start the backend first.
-
-2) Seed the database:
-
-```powershell
-$env:API_URL = "http://127.0.0.1:8000/api"
-py .\data\sample_data.py
-```
-
-Notes:
-- `crypto_symbol` is unique, so re-running the seed script will **skip** already-existing symbols.
-
----
-
 ## API documentation
 
 Once the backend is running:
@@ -209,38 +181,3 @@ Invoke-RestMethod -Method Get -Uri "http://127.0.0.1:8000/api/portfolio"
 - `DASH_PORT` (default: `8051`)
 
 ---
-
-## Troubleshooting
-
-### Port already in use (WinError 10048)
-- Use the launcher: `py .\run_local.py` (auto-picks ports)
-
-### Frontend cant reach backend
-- Confirm `API_URL` matches the backend port printed by the launcher.
-
-### Old UI appears in the browser
-- Stop all running Python processes, then restart `run_local.py`.
-- Hard refresh the browser (Ctrl+F5).
-
-### Reset database
-
-If you want a fresh start:
-- Stop the backend/frontend
-- Delete `crypto_portfolio.db`
-- Start again and re-seed data
-
----
-
-## Contributing
-
-- Keep changes focused
-- If you update routes, env vars, or seed format, also update this README
-
----
-
-## License
-
-Add a license if you plan to publish publicly (MIT is a common choice).l postgresql-contrib
-
-# macOS
-brew install postgresql
