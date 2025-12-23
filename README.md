@@ -3,7 +3,7 @@
 A full-stack **cryptocurrency portfolio dashboard** that combines:
 - **FastAPI + SQLAlchemy** backend (REST API)
 - **Dash + Plotly** frontend (interactive dashboard)
-- **SQLite** database by default (local file: `crypto_portfolio.db`)
+- **SQLite** database 
 
 Use it to track your holdings (quantity, purchase price, current price), view portfolio performance, visualize charts, and manage holdings from the UI.
 
