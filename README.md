@@ -46,6 +46,7 @@ Use it to track your holdings (quantity, purchase price, current price), view po
 
 crypto-portfolio-dashboard/
 │
+
 ├── backend/                 
 │   ├── app.py                  
 │   ├── crud.py                  
