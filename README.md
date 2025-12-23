@@ -59,7 +59,7 @@ Use it to track your holdings (quantity, purchase price, current price), view po
     assets/
         styles.css       # small UI polish
  data/
-    sample_data.py        # seeds 50+ holdings + sentiment
+    sample_data.py        # seeds holdings + sentiment
  run_local.py              # starts backend + frontend together
  crypto_portfolio.db       # created automatically after first run
 ```
