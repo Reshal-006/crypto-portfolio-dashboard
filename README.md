@@ -45,21 +45,20 @@ Use it to track your holdings (quantity, purchase price, current price), view po
 ## Repository structure
 
 ```
-.
  backend/
-    app.py               # FastAPI app + routes
-    crud.py              # DB operations
-    database.py          # DB engine/session
-    models.py            # SQLAlchemy models
-    schemas.py           # Pydantic schemas
-    requirements.txt
+    -app.py               # FastAPI app + routes
+    -crud.py              # DB operations
+    -database.py          # DB engine/session
+    -models.py            # SQLAlchemy models
+    -schemas.py           # Pydantic schemas
+    -requirements.txt
  frontend/
-    app.py               # Dash UI
-    requirements.txt
+    -app.py               # Dash UI
+    -requirements.txt
     assets/
-        styles.css       # small UI polish
+        -styles.css       # small UI polish
  data/
-    sample_data.py        # seeds holdings + sentiment
+    -sample_data.py        # seeds holdings + sentiment
  run_local.py              # starts backend + frontend together
  crypto_portfolio.db       # created automatically after first run
 ```
